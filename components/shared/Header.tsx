@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
     return (
-        <div className='h-[80px] bg-white shadow-xl'>
+        <div className='w-full h-[80px] bg-white shadow-xl'>
             <div className="flex justify-between px-10 pt-3 items-center">
                 <div>
                     <picture>
@@ -10,17 +10,17 @@ export default function Header() {
                     </picture>
                 </div>
                 <div className='flex gap-2'>
-                    <div className=' w-14 h-14 bg-[#F1F8FF] rounded-full flex justify-center items-center'>
+                    <div className=' w-14 h-14 bg-[#F1F8FF] rounded-full flex justify-center items-center cursor-pointer'>
                         <picture>
                             <img src="/img/ep_setting.svg" alt="" />
                         </picture>
                     </div>
-                    <div className=' w-14 h-14 bg-[#F1F8FF] rounded-full flex justify-center items-center'>
+                    <div className=' w-14 h-14 bg-[#F1F8FF] rounded-full flex justify-center items-center cursor-pointer'>
                         <picture>
                             <img src="/img/Mask group.svg" alt="" />
                         </picture>
                     </div>
-                    <div className=' w-32 h-14 bg-[#F1F8FF] rounded-full flex pl-2 items-center justify-between'>
+                    <div className=' w-32 h-14 bg-[#F1F8FF] rounded-full flex pl-2 items-center justify-between cursor-pointer'>
                         <picture>
                             <img src="/img/Ellipse 2.svg" className=' w-10 h-10' alt="" />
                         </picture>

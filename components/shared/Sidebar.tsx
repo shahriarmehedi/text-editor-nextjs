@@ -10,18 +10,25 @@ export default function Sidebar() {
     };
 
     return (
-        <div className='w-[200px] lg:w-[320px] bg-white min-h-screen px-7 py-3'>
+        <div className='w-full lg:w-[320px] bg-white lg:h-[800px] px-7 py-3'>
             <div>
-                <h2 className='text-gray-600 font-semibold'>
-                    Text
-                </h2>
-                <select name="" id="" className='text-gray-800 outline-none w-full border-[1px] rounded-lg p-[10px] border-gray-300 mt-3'>
-                    <option value="">H1</option>
-                    <option value="">H2</option>
-                    <option value="">H3</option>
-                    <option value="">H4</option>
-                    <option value="">H5</option>
-                </select>
+                <div className='relative'>
+                    <h2 className='text-gray-600 font-semibold'>
+                        Text
+                    </h2>
+                    <select name="" id="" className='text-gray-800 outline-none appearance-none w-full border-[1px] rounded-lg p-[10px] border-gray-300 mt-3'>
+                        <option value="">H1</option>
+                        <option value="">H2</option>
+                        <option value="">H3</option>
+                        <option value="">H4</option>
+                        <option value="">H5</option>
+                    </select>
+                    <div className='absolute right-3 bottom-4'>
+                        <picture>
+                            <img src="/img/Vector.svg" alt="" />
+                        </picture>
+                    </div>
+                </div>
 
                 <div className="relative flex items-center text-gray-800 border-[1px] rounded-lg p-2 border-gray-300 mt-3">
                     <div
@@ -67,35 +74,43 @@ export default function Sidebar() {
 
 
                 <div className='flex justify-between mt-3'>
-                    <button className='bg-[#0085FF] text-white py-2 rounded-lg font-[500] text-sm w-[48%]'>
+                    <button className='bg-[#0085FF] text-white py-[10px] rounded-md font-[500] text-sm w-[48%]'>
                         Add Table
                     </button>
-                    <button className='border-[#0085FF] border-[1px] text-[#0085FF] py-2 rounded-lg font-[500] text-sm w-[48%]'>
+                    <button className='border-[#0085FF] border-[1px] text-[#0085FF] py-[10px] rounded-md font-[500] text-sm w-[48%]'>
                         Block Quote
                     </button>
                 </div>
 
 
-                <div className='mt-5'>
+                <div className='mt-5 relative'>
                     <h2 className='text-gray-600 font-semibold'>
                         Hyperlink
                     </h2>
                     <input type="text" name="" id="" className='text-gray-800 outline-none w-full border-[1px] rounded-lg p-[10px] border-gray-300 mt-2' placeholder='Insert link' />
+                    <div className='absolute right-3 bottom-3'>
+                        <picture>
+                            <img src="/img/material-symbols_link-rounded.svg" alt="" />
+                        </picture>
+                    </div>
                 </div>
 
-                <div className='mt-5'>
+                <div className='mt-5 relative'>
                     <h2 className='text-gray-600 font-semibold'>
                         Create a list
                     </h2>
-                    <select name="" id="" className='text-gray-400 outline-none w-full border-[1px] rounded-lg p-[10px] border-gray-300 mt-2'>
+                    <select name="" id="" className='text-gray-400 appearance-none outline-none w-full border-[1px] rounded-lg p-[10px] border-gray-300 mt-2'>
                         <option value=""  >Select option</option>
-
-
                     </select>
+                    <div className='absolute right-3 bottom-4'>
+                        <picture>
+                            <img src="/img/Vector.svg" alt="" />
+                        </picture>
+                    </div>
                 </div>
 
                 <div className='mt-5'>
-                    <button className='bg-[#0085FF] text-white py-2 rounded-lg font-[500] w-full text-sm'>
+                    <button className='bg-[#0085FF] text-white py-[10px] rounded-md font-[500] w-full text-sm'>
                         Add Image
                     </button>
                 </div>

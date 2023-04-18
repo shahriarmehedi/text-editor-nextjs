@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <main className="min-h-screen">
             <Header />
-            <div className="flex">
+            <div className="flex flex-col lg:flex-row">
                 <Sidebar />
                 <Content />
             </div>
